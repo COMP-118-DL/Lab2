@@ -80,7 +80,7 @@ int main() {
  *  @param length length of the line
  */
 
-void drawHorizontalLine(int length, char ch) {
+void drawHorizontalLine(const int length, const char ch) {
     assert(length > 0 && length < 1000);
     cout << "Horizontal line (" << length << "," << ch << ")" << endl;
 
@@ -97,7 +97,7 @@ void drawHorizontalLine(int length, char ch) {
  *  @param height height of the line
  */
 
-void drawVerticalLine(int height, char ch) {
+void drawVerticalLine(const int height,const char ch) {
     assert(height > 0 && height < 1000);
 
     cout << "Horizontal line (" << height << "," << ch << ")" << endl;
@@ -113,7 +113,7 @@ void drawVerticalLine(int height, char ch) {
  * @param size size of the square
  */
 
-void drawSquare(int size, char ch) {
+void drawSquare(const int size, const char ch) {
     assert(size > 0 && size < 1000);
     cout << "Square (" << size << "," << ch << ")" << endl;
 
@@ -141,7 +141,7 @@ void drawSquare(int size, char ch) {
  *  @param height height of the rectangle
  *  @param length length of the rectangle
  */
-void drawRectangle(int height, int length, char ch) {
+void drawRectangle(const int height, const int length, const char ch) {
     assert(height > 0 && height < 1000);
     assert(length > 0 && length < 1000);
 
