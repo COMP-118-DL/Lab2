@@ -75,8 +75,8 @@ int main() {
 
 /**
  *  This function draws a horizontal line made of characters specified by the user
- *  @param ch
- *  @param length
+ *  @param ch character to draw the line with
+ *  @param length length of the line
  */
 
 void drawHorizontalLine(int length, char ch) {
@@ -91,8 +91,8 @@ void drawHorizontalLine(int length, char ch) {
 
 /**
  *  This function draws a vertical line of characters specified by the user
- *  @param ch
- *  @param height
+ *  @param ch character to draw the line with
+ *  @param height height of the line
  */
 
 void drawVerticalLine(int height, char ch) {
@@ -105,8 +105,8 @@ void drawVerticalLine(int height, char ch) {
 
 /**
  *  This function draws a square of a specified length and character
- * @param ch
- * @param size
+ * @param ch character to draw the square with
+ * @param size size of the square
  */
 
 void drawSquare(int size, char ch) {
@@ -132,9 +132,9 @@ void drawSquare(int size, char ch) {
 
 /**
  *  This function draws a rectangle of a specified width and height made from a character
- *  @param ch
- *  @param height
- *  @param length
+ *  @param ch character to draw the rectangle with
+ *  @param height height of the rectangle
+ *  @param length length of the rectangle
  */
 void drawRectangle(int height, int length, char ch) {
     cout << "Rectangle (" << height << "," << length << "," << ch << ")" << endl;
@@ -160,7 +160,6 @@ void drawRectangle(int height, int length, char ch) {
 
 /**
  * This function draws a random number of random shapes
- *
  *
  */
 void drawShapes() {
