@@ -10,6 +10,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cassert>
 
 using namespace std;
 
@@ -80,6 +81,7 @@ int main() {
  */
 
 void drawHorizontalLine(int length, char ch) {
+    assert(length > 0 && length < 1000);
     cout << "Horizontal line (" << length << "," << ch << ")" << endl;
 
     for (int i = 0; i < length; i++) {
@@ -96,6 +98,8 @@ void drawHorizontalLine(int length, char ch) {
  */
 
 void drawVerticalLine(int height, char ch) {
+    assert(height > 0 && height < 1000);
+
     cout << "Horizontal line (" << height << "," << ch << ")" << endl;
 
     for (int i = 0; i < height; i++) {
@@ -110,6 +114,7 @@ void drawVerticalLine(int height, char ch) {
  */
 
 void drawSquare(int size, char ch) {
+    assert(size > 0 && size < 1000);
     cout << "Square (" << size << "," << ch << ")" << endl;
 
     for (int i = 0; i < size; i++) {
@@ -137,6 +142,9 @@ void drawSquare(int size, char ch) {
  *  @param length length of the rectangle
  */
 void drawRectangle(int height, int length, char ch) {
+    assert(height > 0 && height < 1000);
+    assert(length > 0 && length < 1000);
+
     cout << "Rectangle (" << height << "," << length << "," << ch << ")" << endl;
 
     for (int i = 0; i < length; i++) {
